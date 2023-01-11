@@ -6,7 +6,7 @@ ListNode* oddEven(ListNode*head){
       ListNode*dummyodd=new ListNode(-1);
       ListNode*evenTail=dummyeven,oddTail=dummyodd,temp=head;
       while(temp!=null){
-          if(temp.val%2!=0){
+          if(temp->val%2!=0){
               oddTail->next=temp;
               oddTail=oddTail->next;
           }
